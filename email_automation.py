@@ -22,12 +22,12 @@ Dear {name},
 This is a test email with a PDF attachment.
 
 Best regards,
-Adhithya Shanil
+Your Name
 """
 
 # Step 3: Function to send email with PDF attachment
 def send_email(email, name):
-    from_email = 'adhithyasonu@example.com'  # Replace with your email address
+    from_email = 'your_email'  # Replace with your email address
     to_email = email
     msg = MIMEMultipart()
     msg['From'] = from_email
@@ -39,7 +39,7 @@ def send_email(email, name):
     msg.attach(MIMEText(body, 'plain'))
 
     # Attach PDF file
-    filename = 'Resume.pdf'  # Replace with your PDF file name
+    filename = 'filename.pdf'  # Replace with your PDF file name
     attachment = open(filename, 'rb')
 
     part = MIMEBase('application', 'octet-stream')
@@ -51,8 +51,8 @@ def send_email(email, name):
     # Connect to the SMTP server
     smtp_server = 'smtp.gmail.com'  # Replace with your SMTP server
     smtp_port = 587  # Replace with your SMTP port
-    smtp_username = 'adhithyasonu@gmail.com'  # Replace with your SMTP username
-    smtp_password = 'cpeckobthqfmjccr'  # Replace with your SMTP password
+    smtp_username = 'your email'  # Replace with your SMTP username
+    smtp_password = 'password'  # Replace with your SMTP password, app password generated using google account 
 
     try:
         server = smtplib.SMTP(smtp_server, smtp_port)
