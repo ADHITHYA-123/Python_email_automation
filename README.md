@@ -1,0 +1,1 @@
+To use thiss code , first setup this in VScode , then the file you have to attach and the excel sheet with name and email named contact.xlsx and run this code to send the message written in code to all the emails in the excel sheet
